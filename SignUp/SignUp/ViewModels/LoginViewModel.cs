@@ -1,4 +1,5 @@
-﻿using SignUp.Services;
+﻿
+using SignUp.Services;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -24,9 +25,12 @@ namespace SignUp.ViewModels
                 return new Command(async() =>
                 {
                     await _apiServices.LoginAsync(Username, Password);
+                    
                 });
             }
         }
+
+       
     }
 
 

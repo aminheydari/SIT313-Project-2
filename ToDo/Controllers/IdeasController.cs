@@ -9,9 +9,9 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Description;
-using ToDo.Models;
+using SignUp.Models;
 
-namespace ToDo.Controllers
+namespace SignUp.Controllers
 {
     //authurization to web service
     //[Authorize] ==> it means all the methods are authorized 

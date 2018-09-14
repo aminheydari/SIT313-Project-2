@@ -7,7 +7,7 @@ using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 
-namespace ToDo
+namespace SignUp
 {
     public class WebApiApplication : System.Web.HttpApplication
     {

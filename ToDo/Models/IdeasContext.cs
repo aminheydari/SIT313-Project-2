@@ -4,7 +4,7 @@ using System.Data.Entity;
 using System.Linq;
 using System.Web;
 
-namespace ToDo.Models
+namespace SignUp.Models
 {
     public class IdeasContext : DbContext
     {
@@ -19,6 +19,6 @@ namespace ToDo.Models
         {
         }
 
-        public System.Data.Entity.DbSet<ToDo.Models.Idea> Ideas { get; set; }
+        public System.Data.Entity.DbSet<SignUp.Models.Idea> Ideas { get; set; }
     }
 }

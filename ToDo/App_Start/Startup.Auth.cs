@@ -8,10 +8,10 @@ using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.Google;
 using Microsoft.Owin.Security.OAuth;
 using Owin;
-using ToDo.Providers;
-using ToDo.Models;
+using SignUp.Providers;
+using SignUp.Models;
 
-namespace ToDo
+namespace SignUp
 {
     public partial class Startup
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace ToDo.Models
+namespace SignUp.Models
 {
     // Models returned by AccountController actions.
 

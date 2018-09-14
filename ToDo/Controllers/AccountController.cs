@@ -13,11 +13,11 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.OAuth;
-using ToDo.Models;
-using ToDo.Providers;
-using ToDo.Results;
+using SignUp.Models;
+using SignUp.Providers;
+using SignUp.Results;
 
-namespace ToDo.Controllers
+namespace SignUp.Controllers
 {
     [Authorize]
     [RoutePrefix("api/Account")]

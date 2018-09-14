@@ -1,9 +1,11 @@
 ﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using SignUp.Models;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -56,8 +58,23 @@ namespace SignUp.Services
             var response = await client.SendAsync(request);
 
             var content = await response.Content.ReadAsStringAsync();
+
+            
+
             Debug.WriteLine(content);
 
+            
+
+        }
+
+        public async Task<List<Idea>> GetIdeasAsync(string accessToken)
+        {
+            var client = new HttpClient();
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
+
+            var json = await client.GetStringAsync("http://localhost:31541/api/Ideas/");
+            var ideas = JsonConvert.DeserializeObject<List<Idea>>(json);
+            return ideas;
         }
     }
 }

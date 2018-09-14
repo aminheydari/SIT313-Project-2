@@ -7,7 +7,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Web.Http;
 
-namespace ToDo.Results
+namespace SignUp.Results
 {
     public class ChallengeResult : IHttpActionResult
     {

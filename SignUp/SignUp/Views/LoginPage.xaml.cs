@@ -16,5 +16,14 @@ namespace SignUp.Views
 		{
 			InitializeComponent ();
 		}
-	}
+
+        private async void Button_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new IdeasPage()); 
+        }
+        private async void Button1_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new HomePage());
+        }
+    }
 }

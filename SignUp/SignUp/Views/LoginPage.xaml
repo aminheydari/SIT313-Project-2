@@ -12,6 +12,11 @@
         <Entry Text="{Binding Password }" IsPassword="True"/>
 
         <Button Command="{Binding LoginCommand}" Text="Login"/>
+
+        <Button Text="Go to activities page" Clicked="Button_Clicked"/>
+        
+        <Button Text="Go to activities app" Clicked="Button1_Clicked"/>
+
     </StackLayout>
 
 </ContentPage>

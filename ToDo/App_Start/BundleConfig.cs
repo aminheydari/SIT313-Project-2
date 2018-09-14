@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace ToDo
+namespace SignUp
 {
     public class BundleConfig
     {
